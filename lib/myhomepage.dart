@@ -1,9 +1,11 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:qrcode_generator/constant/constant.dart';
 import 'package:qrcode_generator/generateqr.dart';
 import 'package:qrcode_generator/scan_qr.dart';
+import 'package:qrcode_generator/test.dart';
 import 'package:qrcode_generator/widgets/appbar.dart';
 
 
@@ -29,11 +31,17 @@ class _MyhomepageState extends State<Myhomepage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-           _buildFeatureButton(context,"Generate QR Code", Icons.qr_code, () {
+           _buildFeatureButton(context,"Generate QR Code",
+            // Icons.qr_code,
+            CupertinoIcons.qrcode,
+             () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => GenerateQr(),));
             },),
              SizedBox(height: 60),
-            _buildFeatureButton(context,"Scan QR", Icons.qr_code_scanner, () {
+            _buildFeatureButton(context,"Scan QR",
+            //  Icons.qr_code_scanner,
+            CupertinoIcons.qrcode_viewfinder,
+              () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => ScanQr(),));
             },)
           ],
