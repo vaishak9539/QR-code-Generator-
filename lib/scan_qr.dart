@@ -3,7 +3,6 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qrcode_generator/constant/constant.dart';
 import 'package:qrcode_generator/widgets/custom_text.dart';
-import 'package:qrcode_generator/widgets/overlay.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 

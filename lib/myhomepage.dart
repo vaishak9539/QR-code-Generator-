@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:qrcode_generator/constant/constant.dart';
 import 'package:qrcode_generator/generateqr.dart';
 import 'package:qrcode_generator/scan_qr.dart';
-import 'package:qrcode_generator/test.dart';
 import 'package:qrcode_generator/widgets/appbar.dart';
 
 
